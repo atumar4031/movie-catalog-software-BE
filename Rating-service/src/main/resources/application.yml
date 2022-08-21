@@ -1,0 +1,19 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: RATING-DATA-SERVICE
+  devtools:
+    add-properties: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rating_service
+    username: postgres
+    password: atumar4031
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+
+api:
+  key: c2ba26b6c29ca474812148bd7d43062d

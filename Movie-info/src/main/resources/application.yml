@@ -1,0 +1,9 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: MOVIE-INFO-SERVICE
+
+api:
+  key: c2ba26b6c29ca474812148bd7d43062d
