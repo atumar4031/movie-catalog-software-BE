@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: MOVIE-CATALOG-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/regisration_service
+    username: postgres
+    password: atumar4031
+  jpa:
+      hibernate.ddl-auto: update
+      generate-ddl: true
+      show-sql: false
+
 management:
   health:
     circuitbreakers:
@@ -15,6 +24,12 @@ management:
   endpoint:
     health:
       show-details: always
+
+app:
+  jwt-secret: JWTSecret
+  jwt-expiration-time: 164800000
+
+
 
 resilience4j:
   circuitbreaker:
